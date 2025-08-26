@@ -1,11 +1,11 @@
 import numpy as np
-import matplotlib.pyplot as p1
+import matplotlib.pyplot as mpl
 # Line graph
 '''
 x=np.arange(7)#(0,1,2,3,4,5,6)
 y=np.arange(1,20,3)# works like range function
-p1.plot(x,y)
-p1.show()
+mpl.plot(x,y)
+mpl.show()
 '''
 
 #******************
@@ -15,11 +15,11 @@ x=np.arange(7)
 y=np.arange(1,20,3)
 print(x)
 print(y)
-p1.xlabel("Data from list x")
-p1.ylabel("Data from list y")
-p1.title("My PyPlot 1")
-p1.plot(x,y)
-p1.show()
+mpl.xlabel("Data from list x")
+mpl.ylabel("Data from list y")
+mpl.title("My PyPlot 1")
+mpl.plot(x,y)
+mpl.show()
 
 '''
 #******************
@@ -30,11 +30,11 @@ x=[ 1,2,3, 4,5, 6,7, 8, 9,10]
 y=[13,7,2,11,0,17,1,11,22,14]
 print(x)
 print(y)
-p1.xlabel("Overs")
-p1.ylabel("Score")
-p1.title("IPL 2019")
-p1.plot(x,y)
-p1.show()
+mpl.xlabel("Overs")
+mpl.ylabel("Score")
+mpl.title("IPL 2019")
+mpl.plot(x,y)
+mpl.show()
 '''
 
 #******************
@@ -44,28 +44,28 @@ x=[1,2,3,4,5,6,7,8,9,10]
 y=[13,7,2,11,0,17,1,11,22,14]
 print(x)
 print(y)
-p1.xlabel("Overs")
-p1.ylabel("Score")
-p1.title("IPL 2019")
-p1.plot(x,y,'b')# b indicates line of colour as blue
-p1.plot(x,y,"g^") # g indicates the points as green colour
-p1.show()
+mpl.xlabel("Overs")
+mpl.ylabel("Score")
+mpl.title("IPL 2019")
+mpl.plot(x,y,'b')# b indicates line of colour as blue
+mpl.plot(x,y,"g^") # g indicates the points as green colour
+mpl.show()
 '''
 #******************
-
+'''
 x=[ 1,2,3, 4,5, 6,7, 8, 9,10]
 y=[13,7,2,11,0,17,1,11,22,14]
 print(x)
 print(y)
-p1.xlabel("Overs")
-p1.ylabel("Score")
-p1.title("IPL 2019")
-p1.plot(x,y)
-p1.plot(x,y,"ro")# points are depicted in red colour round shape
+mpl.xlabel("Overs")
+mpl.ylabel("Score")
+mpl.title("IPL 2019")
+mpl.plot(x,y)
+mpl.plot(x,y,"ro")# points are depicted in red colour round shape
 #Player out
-p1.plot([4],[11],"b^")#major point is highlighted with arrow mark with blue colour  on point 
-p1.show()
-
+mpl.plot([4],[11],"b^")#major point is highlighted with arrow mark with blue colour  on point 
+mpl.show()
+'''
 #******************
 '''
 a=np.arange(0,10,0.1)
@@ -73,12 +73,12 @@ x=np.cos(a)# moves from peak to valley........high to low
 y=np.sin(a) # moves from valley to peak.......low to high
 print(x)
 print(y)
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.plot(a,x,'b',linewidth=10)
-p1.plot(a,y,'r',linewidth=2)
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.plot(a,x,'b',linewidth=10)
+mpl.plot(a,y,'r',linewidth=2)
+mpl.show()
 '''
 
 #******************
@@ -89,12 +89,12 @@ x=np.cos(a)
 y=np.sin(a)
 print(x)
 print(y)
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.plot(a,x,'b',linewidth=5,linestyle='dashed')#dashed,solid,dashdot,dotted
-p1.plot(a,y,'r',linewidth=2)
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.plot(a,x,'b',linewidth=5,linestyle='dashed')#dashed,solid,dashdot,dotted
+mpl.plot(a,y,'r',linewidth=2)
+mpl.show()
 '''
 #******************
 # alternative method to display line style
@@ -104,12 +104,12 @@ x=np.cos(a)
 y=np.sin(a)
 print(x)
 print(y)
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.plot(a,x,'b',linewidth=5,linestyle=':')# '-', '--', '-.', ':'
-p1.plot(a,y,'r',linewidth=2)
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.plot(a,x,'b',linewidth=5,linestyle=':')# '-', '--', '-.', ':'
+mpl.plot(a,y,'r',linewidth=2)
+mpl.show()
 
 '''        
 #******************
@@ -119,63 +119,63 @@ x=np.cos(a)
 y=np.sin(a)
 print(x)
 print(y)
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.plot(x, y, 'y^--', linewidth=1,markersize=8)
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.plot(x, y, 'y^--', linewidth=1,markersize=8)
+mpl.show()
 '''
 #*******************************************
 # bar graph
 '''
-p1.bar([1,2,3,4,5],[6,7,8,9,10])# one list is for x axis and second list is for y axis
-p1.show()
+mpl.bar([1,2,3,4,5],[6,7,8,9,10])# one list is for x axis and second list is for y axis
+mpl.show()
 '''
 
 #***********************
 '''
 x=[1,2,3,4,5]
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y)
-p1.savefig("data.jpg") # here the graph will be saved as data.pdf
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y)
+mpl.savefig("data.jpg") # here the graph will be saved as data.pdf
+mpl.show()
 '''
 #***********************
 '''
 # width of each bar
 x=[1,2,3,4,5]
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y,width=0.3)#width=0.1 to 0.9
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y,width=0.3)#width=0.1 to 0.9
+mpl.show()
 '''
 #***********************
 '''
 # colour of the bar
 x=[1,2,3,4,5]
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y,width=0.3,color="red")#width =0.1 to 0.9......default colour of bar is blue
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y,width=0.3,color="red")#width =0.1 to 0.9......default colour of bar is blue
 
-p1.show()
+mpl.show()
 '''
 #***********************
 '''
 # bars with different thickness
 x=[1,2,3,4,5]
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y,width=[0.3,0.2,0.4,0.1,0.5],color="red")#width=0.1 to 0.9
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y,width=[0.3,0.2,0.4,0.1,0.5],color="red")#width=0.1 to 0.9
+mpl.show()
 '''
 #***********************
 
@@ -183,22 +183,22 @@ p1.show()
 # bars with different width and colours
 x=[1,2,3,4,5]
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y,width=[0.3,0.2,0.4,0.1,0.5],color=["red","black","b","g","y",])#width=0.1 to 0.9
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y,width=[0.3,0.2,0.4,0.1,0.5],color=["red","black","b","g","y",])#width=0.1 to 0.9
+mpl.show()
 '''
 #***********************
 '''
 x=np.arange(0,10,2)
 y=[6,7,8,9,10]
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x,y,width=0.2,color="b")
-p1.bar(x+0.3,y,width=0.2,color="r")
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x,y,width=0.2,color="b")
+mpl.bar(x+0.3,y,width=0.2,color="r")
+mpl.show()
 '''
 #***********************
 '''
@@ -206,23 +206,24 @@ x=np.arange(4)
 v=[[6,7,8,9],[5,6,7,8],[7,8,9,10]]# [6,7,8,9],  ARE SAY MARKS OF ENG FOR EXAMPLE CHILD 1 HAS SCORED 6 IN ENG, CHILD 2 SCORED 7,CHILD 3 SCORED 8 , CHILD 4 SCORED 9
 # [5,6,7,8,9] SAY FOR HINDI
 # [ 7,8,9,10] SAY FOR MATHS
-p1.xlabel("DATA FROM A")
-p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x+0.00,v[0],width=0.2,color="y")# ENGLISH
-p1.bar(x+0.25,v[1],width=0.2,color="b")# HINDI
-p1.bar(x+0.50,v[2],width=0.2,color="r") # MATHS
-p1.show()
+mpl.xlabel("DATA FROM A")
+mpl.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x+0.00,v[0],width=0.2,color="y")# ENGLISH
+mpl.bar(x+0.25,v[1],width=0.2,color="b")# HINDI
+mpl.bar(x+0.50,v[2],width=0.2,color="r") # MATHS
+mpl.show()
 '''
 #****************************
 # PIE CHART
 '''
 x=np.arange(10,100,20)# 10, 30, 50, 70, 90
 L=["A","B","C","D","E"]
-p1.title("DATA ALL")
-#p1.pie(x)
-p1.pie(x,labels=L)
-p1.show()
+mpl.title("DATA ALL")
+#mpl
+#.pie(x)
+mpl.pie(x,labels=L)
+mpl.show()
 '''
 #***********************
 
@@ -231,9 +232,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=['red','black','pink','yellow','silver'])
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=['red','black','pink','yellow','silver'])
+mpl.show()
 '''
 
 #***********************
@@ -243,9 +244,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=mcolor)
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=mcolor)
+mpl.show()
 #***********************
 '''
 '''
@@ -253,9 +254,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=mcolor,autopct="%3d%%")
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=mcolor,autopct="%3d%%")
+mpl.show()
 '''
 #***********************
 '''
@@ -263,9 +264,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=mcolor,autopct="%03d%%")
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=mcolor,autopct="%03d%%")
+mpl.show()
 '''
 #***********************
 '''
@@ -273,9 +274,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=mcolor,autopct="%05.3f%%")
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=mcolor,autopct="%05.3f%%")
+mpl.show()
 '''
 #***********************
 '''
@@ -283,9 +284,9 @@ x=np.arange(10,100,20)
 print(x)
 L=["Python","PHP","CSS","C++","HTML"]
 mcolor=['red','black','pink','yellow','silver']
-p1.title("DATA ALL")
-p1.pie(x,labels=L,colors=mcolor,autopct="%05.3f%%",explode=[0,0.2,0,0.5,0])
-p1.show()
+mpl.title("DATA ALL")
+mpl.pie(x,labels=L,colors=mcolor,autopct="%05.3f%%",explode=[0,0.2,0,0.5,0])
+mpl.show()
 
 '''
 #*********************
@@ -297,21 +298,21 @@ p1.show()
 #Bar chart represents a single value whereas Histogram represents range of value
 
 '''
-p1.hist([1,4,7,12,13,15],bins=[1,5,10,15])
+mpl.hist([1,4,7,12,13,15],bins=[1,5,10,15])
 # [1,4,7,12,13,15]  are the values which are to be adjusted as per the range
 
 #  [1,5,10,15] is the range i.e. 1-5, 6-10,11-15
 # 1-5 (2 elements), 6-10 (1 element),11-15 (3 element)
 
-p1.show()
+mpl.show()
 '''
 # histogram with default bin value
 '''
 #randn()- function creates an array of specified
 #shape and fills it with random values as per standard normal distribution
 y=np.random.randn(1000)
-p1.hist(y)
-p1.show()
+mpl.hist(y)
+mpl.show()
 # this graph is called as normal distribution curve as it has bell shape.
 # by default the histogram can draw only 10 bars so the bin value is 10
 # bin value can be customised
@@ -321,8 +322,8 @@ p1.show()
 #histogram with changed bin value
 '''
 y=np.random.randn(1000)
-p1.hist(y,25) # bins=25
-p1.show()
+mpl.hist(y,25) # bins=25
+mpl.show()
 # very fine grained bar will appear
 
 '''
@@ -330,40 +331,42 @@ p1.show()
 # histogram with well defined edge
 '''
 y=np.random.randn(1000)
-p1.hist(y,25, edgecolor="red") # bins=25
-p1.show()
+mpl.hist(y,25, edgecolor="red") # bins=25
+mpl.show()
 '''
 #*********************************
 # histogram with  number of students lying in the same weight range
 '''
 y=[5,15,25,35,15,55]
-p1.hist(y, bins=[0,10,20,30,40,50,60],weights=[20,10,45,33,6,8],edgecolor="red")
-p1.show()
+mpl.hist(y, bins=[0,10,20,30,40,50,60],weights=[20,10,45,33,6,8],edgecolor="red")
+mpl.show()
 
 '''
 # histogram with different color and labels
 '''
 y=[5,15,25,35,15,55]
-p1.hist(y, bins=[0,10,20,30,40,50,60],weights=[20,10,45,33,6,8],
+mpl.hist(y, bins=[0,10,20,30,40,50,60],weights=[20,10,45,33,6,8],
         edgecolor="red",facecolor='c')
-p1.title("histogram for students")
-p1.xlabel('Value')
-p1.ylabel('Frequency')
-p1.savefig('student.png')
-p1.show()
+mpl.title("histogram for students")
+mpl.xlabel('Value')
+mpl.ylabel('Frequency')
+mpl.savefig('student.png')
+mpl.show()
 '''
 '''
 x=np.arange(3)
 v=[[92,87,95],[82,89,88],[72,87,97]]# [6,7,8,9],  ARE SAY MARKS OF ENG FOR EXAMPLE CHILD 1 HAS SCORED 6 IN ENG, CHILD 2 SCORED 7,CHILD 3 SCORED 8 , CHILD 4 SCORED 9
 # [5,6,7,8,9] SAY FOR HINDI
 # [ 7,8,9,10] SAY FOR MATHS
-#p1.xlabel("DATA FROM A")
-#p1.ylabel("DATA FROM B")
-p1.title("DATA ALL")
-p1.bar(x+0.00,v[0],width=0.2,color="y")# ENGLISH
-p1.bar(x+0.25,v[1],width=0.2,color="b")# HINDI
-p1.bar(x+0.50,v[2],width=0.2,color="r") # MATHS
-p1.show()
+#mpl
+#.xlabel("DATA FROM A")
+#mpl
+#.ylabel("DATA FROM B")
+mpl.title("DATA ALL")
+mpl.bar(x+0.00,v[0],width=0.2,color="y")# ENGLISH
+mpl.bar(x+0.25,v[1],width=0.2,color="b")# HINDI
+mpl.bar(x+0.50,v[2],width=0.2,color="r") # MATHS
+mpl.show()
 p
 '''
 '''
@@ -382,9 +385,9 @@ df_operations()
 '''
 a=[2,9,20,25,30]
 b=[12,24,25,27,29]
-p1.plot(a,b)
-p1.xticks(a)
-p1.show()
+mpl.plot(a,b)
+mpl.xticks(a)
+mpl.show()
 '''
 
 
