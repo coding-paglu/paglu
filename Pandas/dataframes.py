@@ -276,7 +276,7 @@ f1=f1._append(f2)
 print(f1)
 '''
 #15 SORTING (will arrange the column heading in ascending order) 
-'''
+
 import numpy as np
 import pandas as pd
 
@@ -290,15 +290,15 @@ marks2={2:pd.Series([59,57,87],index =['CS', 'EP', 'PE']),
        3:pd.Series([83,78,67],index =['CS', 'EP', 'PE']),
        1:pd.Series([66,88,77],index =['CS', 'EP', 'PE'])}
 f2=pd.DataFrame(marks2)
-print(f2)
-print('***************')
+#print(f2)
+#print('***************')
 f1=f1._append(f2)
 print(f1)
-print('***************')
+#print('***************')
 
 f1=f1._append(f2,sort=True)
 print(f1)
-'''
+
 #16ATTRIBUTES OF PANDAS (total 11)
 #1 INDEX- will display name of rows
 
